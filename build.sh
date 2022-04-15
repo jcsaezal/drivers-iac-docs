@@ -4,7 +4,8 @@ documents=('../Entorno/guion.md entorno.html' \
 	'../Chardev/guion.md practica2.html' \
 	'../Syncronization/guion.md practica3.html' \
 	'../TopBottom/guion.md practica4.html' \
-	'../PlatformDriver/guion.md practica5.html')
+	'../PlatformDriver/guion.md practica5.html' \
+	'../IntroBPFTrace/intro_bpftrace.md intro_bpftrace.html')
 
 ndocs=${#documents[@]}
 
