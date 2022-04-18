@@ -974,7 +974,7 @@ font-size: 12px
 <li><code>&lt;uapi/asm-generic/errno-base.h&gt;</code> (errores clásicos)</li>
 <li><code>&lt;uapi/asm-generic/errno.h&gt;</code></li>
 </ul>
-<p>Consulta los citados ficheros de cabecera usando el buscador de las fuentes del kernel <em>Elixir Bootlin</em>, usando el siguiente enlace: <a href="https://elixir.bootlin.com/linux/v5.10.92/source" class="uri">https://elixir.bootlin.com/linux/v5.10.92/source</a>. Estos ficheros se encuentran en el directorio <code>include/asm-generic</code></p>
+<p>Consulta los citados ficheros de cabecera usando el buscador de las fuentes del kernel <em>Elixir Bootlin</em>, usando el siguiente enlace: <a href="https://elixir.bootlin.com/linux/v5.10.92/source" class="uri">https://elixir.bootlin.com/linux/v5.10.92/source</a>. Estos ficheros se encuentran en el directorio <code>include/uapi/asm-generic</code></p>
 <p>Modifica alguno de los módulos del kernel de ejemplo para que la función de carga devuelva uno de estos errores (p.ej., <code>return -EINVAL;</code> ) ¿Qué sucede al intentar cargar el módulo cuando esta función devuelve un número negativo? ¿Es posible descargar el módulo a continuación con <code>rmmod</code>?</p>
 <h2 id="ejercicio-2"><span class="header-section-number">2.2</span> Ejercicio 2</h2>
 <p>Estudiar el mecanismo de paso de parámetros a módulos del kernel, que se ilustra en el módulo de ejemplo <code>Hello5</code>. Para más información sobre el paso de parámetros, se han de consultar las siguientes fuentes:</p>
@@ -996,7 +996,7 @@ font-size: 12px
 <li><p>Ir al directorio <code>Clipboard</code> y borrar ficheros resultantes de compilaciones previas usando el <code>Makefile</code>convencional:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode powershell"><code class="sourceCode powershell"><a class="sourceLine" id="cb2-1" title="1">kernel@debian:~$ <span class="fu">cd</span> drivers-iac/1-Modules/Clipboard</a>
 <a class="sourceLine" id="cb2-2" title="2">kernel@debian:~/drivers-iac/1-Modules/Clipboard$ make clean </a></code></pre></div></li>
-<li>Generar el <code>.ko</code> adecuado para el kernel de la Raspberry pi usando el comando <code>make -f Makefile.cross</code> desde el mismo directorio donde nos encontramos.
+<li><p>Generar el <code>.ko</code> adecuado para el kernel de la Raspberry pi usando el comando <code>make -f Makefile.cross</code> desde el mismo directorio donde nos encontramos.</p>
 <ul>
 <li>Nótese que con la opción -f de GNU Make se escoge manualmente el fichero Makefile para realizar la compilación.</li>
 </ul></li>
